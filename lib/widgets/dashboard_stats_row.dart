@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:canva2code/widgets/attendance_guage.dart';
 
 class DashboardStatsRow extends StatelessWidget {
   const DashboardStatsRow({super.key});
@@ -23,7 +24,7 @@ class DashboardStatsRow extends StatelessWidget {
                   style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold),
                 ),
                 const SizedBox(height: 8),
-                // Fake gauge placeholder
+                AttendanceGauge(percentage: 66,),
                 SizedBox(
                   height: 120,
                   child: Center(

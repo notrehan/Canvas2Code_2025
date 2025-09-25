@@ -21,11 +21,11 @@ class ProfileCard extends StatelessWidget {
           ),
           const SizedBox(height: 25),
           const Text(
-            "Adarsh Mohan K S",
+            "Rehan Maqsood",
             style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
           ),
           const Text(
-            "Government Engineering College Thrissur",
+            "Vidya Engineering College Thrissur",
             textAlign: TextAlign.center,
             style: TextStyle(color: Colors.grey, fontSize: 12),
           ),
@@ -34,8 +34,8 @@ class ProfileCard extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: const [
               _ProfileStat(label: "Activities", value: "153"),
-              _ProfileStat(label: "SGPA", value: "7.9"),
-              _ProfileStat(label: "CGPA", value: "7.6"),
+              _ProfileStat(label: "SGPA", value: "8.6"),
+              _ProfileStat(label: "CGPA", value: "8.6"),
             ],
           )
         ],

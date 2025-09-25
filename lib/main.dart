@@ -50,7 +50,7 @@ class DashboardScreen extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: const [
                     Text(
-                      "Hi Adarsh",
+                      "Hi Rehan",
                       style: TextStyle(
                         fontSize: 18,
                         fontWeight: FontWeight.bold,
@@ -205,19 +205,15 @@ class DashboardScreen extends StatelessWidget {
                           const SizedBox(height: 24),
 
                           // 🔹 CGPA Graph + Today Classes
-                          Row(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: const [
-                              Expanded(
-                                flex: 3,
-                                child: CgpaGraphWidget(),
-                              ),
-                              SizedBox(width: 20),
-                              SizedBox(
-                                width: 250,
-                                child: TodayClassesWidget(),
-                              ),
-                            ],
+                          SizedBox(
+                            height: 400,
+                            child: Row(
+                              children: const [
+                                Expanded(flex: 3, child: CgpaGraphWidget()),
+                                SizedBox(width: 20),
+                                SizedBox(width: 250, child: TodayClassesWidget()),
+                              ],
+                            ),
                           ),
                           const SizedBox(height: 24),
                           const DashboardStatsRow(),
